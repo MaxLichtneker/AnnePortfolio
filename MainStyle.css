@@ -10,7 +10,7 @@ body{
 }
 
 #navBar{
-    background-color: #ffffffb9;
+    background-color: #fdfbfbb7;
 
     display: flex;
     justify-content: left;
@@ -22,7 +22,7 @@ body{
 
     top: 0px;
 
-    padding-left: 50px;
+    padding-left: 10px;
     position: fixed;
     transition: top 0.3s;
 }
@@ -92,7 +92,7 @@ body{
 
 h{
     color: #455852;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h1{
@@ -102,10 +102,10 @@ h1{
 
 p{
     color: #455852;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 p1{
     color: #6B7C6A;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
