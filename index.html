@@ -5,20 +5,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="Images/tinyme.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <title>Anne Roos Leeuwis</title>
@@ -29,46 +15,41 @@
         <div class="navBarItems">
             <button class="navBarButtons"><p1>Home</p1></button>
             <button class="navBarButtons"><p1>Gallery</p1></button>
-            <button class="navBarButtons"><p1>About</p1></button>
-            <button class="navBarButtons"><p1>Contact</p1></button>
+            <button class="navBarButtons" onclick="window.location.href='About.html';"><p1>About</p1></button>
         </div>
     </div>
     <div style="margin-left: auto; margin-right: auto; text-align: center; text-decoration: underline; text-underline-offset: 10px; text-decoration-thickness: 2px; margin-top: 150px;">
         <h>Gallery</h>
     </div>
     <div class="subNavbar">
-        <button id="galleryButtons">All</button>
+        <button id="Button_Portraits" class="galleryButtons" onclick="GalleryButton(this.id)">Portraits</button>
         <p>|</p>
-        <button id="galleryButtons">Portraits</button>
+        <button id="Button_Landscapes" class="galleryButtons" onclick="GalleryButton(this.id)">Landscape</button>
         <p>|</p>
-        <button id="galleryButtons">Landscape</button>
+        <button id="Button_Sketches" class="galleryButtons" onclick="GalleryButton(this.id)">Sketches</button>
         <p>|</p>
-        <button id="galleryButtons">Sketches</button>
-        <p>|</p>
-        <button id="galleryButtons">Game art</button>
+        <button id="Button_GameArt" class="galleryButtons" onclick="GalleryButton(this.id)">Game art</button>
     </div>
-    <div class="imageContainer">
-            <img class="rowItemWide" src="Images/Container_Images/Orthodoux_DTIYS.jpg">
-            <img class="rowItemWide" src="Images/Container_Images/me.jpg">
 
-            <img class="rowItemWide" src="Images/Container_Images/Disturbance.jpg">
-            <img class="rowItemWide" src="Images/Container_Images/Castle_Meadow.png">
+    <div id="Portraits" class="imageContainer">
+        <img class="PortraitsItem" src="Images/Container_Images/IMG_0151.jpg" style="max-width: 50%;">
+        <img class="PortraitsItem" src="Images/Container_Images/me.jpg">
+        <img class="PortraitsItem" src="Images/Container_Images/Aragorn_Colored.jpg">
+        <img class="PortraitsItem" src="Images/Container_Images/Orthodoux_DTIYS.jpg">
+        <img class="PortraitsItem" src="Images/Container_Images/Goddess.png">
+    </div>
 
-            <img class="rowItemWide" src="Images/Container_Images/Aragorn_Colored.jpg">
-            <img class="rowItemWide" src="Images/Container_Images/Goddess.png">
+    <div id="Landscapes" class="imageContainer;">
+        <img class="LandscapeItem" src="Images/Container_Images/Castle_Meadow.png">
+    </div>
 
-            <img class="rowItemWide" src="Images/Container_Images/Loft_room.png">
-            <img class="rowItemWide" src="Images/Container_Images/RockMountai_exercise.png">
+    <div id="Sketches" class="imageContainer">
+    </div>
 
-            <img class="rowItemWide" src="Images/Container_Images/IMG_0146.png">
-            <img class="rowItemWide" src="Images/Container_Images/IMG_0147.png">
-
-            <img class="rowItemWide" src="Images/Container_Images/IMG_0149.png">
-            <img class="rowItemWide" src="Images/Container_Images/IMG_0150.png">
-
-            <img class="rowItemWide" src="Images/Container_Images/IMG_0151.jpg">
+    <div id="GameArt" class="imageContainer">
     </div>
 
     <script src="Navbar.Js" defer></script>
+    <script src="GalleryButtons.js" defer></script>
 
 </body>
