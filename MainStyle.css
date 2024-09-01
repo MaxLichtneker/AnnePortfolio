@@ -64,7 +64,7 @@ body{
 }
 
 .imageContainer{
-    visibility:hidden;
+    visibility:visible;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,17 +86,18 @@ body{
 }
 
 .PortraitsItem{
-    display: none;
+    display: block;
     max-width: 30%;
 }
 
-.LandscapeItem{
+.LandscapesItem{
     display: none;
-    max-width: 30%;
+    max-width: 40%;
 }
 
-.sketchesItem{
+.SketchesItem{
     display: none;
+    max-width: 35%;
 }
 
 .gameArtItem{
