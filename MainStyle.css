@@ -10,7 +10,7 @@ body{
 }
 
 #navBar{
-    background-color: #fdfbfbb7;
+    background-color: #fce4e4d5;
 
     display: flex;
     justify-content: left;
@@ -41,6 +41,10 @@ body{
 .navBarButtons{
     background: none;
     border: none;
+}
+
+.navBarButtons:hover{
+    text-decoration: underline;
 }
 
 .galleryButtons{
@@ -80,7 +84,6 @@ body{
     margin-right: auto;
 
     margin-top: 50px;
-    margin-bottom: 50px;
 
     gap: 50px;
 }
