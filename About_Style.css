@@ -42,10 +42,36 @@
 
 h3{
     color: #728170;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 }
 
 p2{
     color: #728170;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1150px) {
+
+    p2{
+        font-size: 1.8rem;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .AboutContainer{
+        max-width: 60%;
+        justify-content: center;
+    }
+
+    .textContainer{
+        padding-left: 0px;
+        max-width: 100%;
+        
+    }
+
+    .about_Profile_Image{
+        max-width: 100%;
+    }
 }

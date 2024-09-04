@@ -1,13 +1,15 @@
 let prevScrollPos = window.scrollY;
 
-window.addEventListener('scroll', function() {
-    const currentScrollPos = this.window.scrollY;
+window.addEventListener('scroll', function(){
 
-    if(prevScrollPos > currentScrollPos){
-        document.getElementById("navBar").style.top = "0px";
-    }else{
-        document.getElementById("navBar").style.top = "-200px";
-    }
+        const currentScrollPos = this.window.scrollY;
 
-    prevScrollPos = currentScrollPos;
+        if(prevScrollPos > currentScrollPos){
+            document.getElementById("navBar").style.top = "0px";
+        }else{
+            document.getElementById("navBar").style.top = "-200px";
+        }
+
+        prevScrollPos = currentScrollPos;
+
 });

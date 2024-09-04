@@ -1,5 +1,7 @@
+var buttonImgArray = ['Images/Lines.png', 'Images/Cross.png'] 
+
 let previousImages = document.getElementById("Portraits");
-let previousButtonString = document.querySelectorAll('.PortraitsItem');;
+let previousButtonString = document.querySelectorAll('.PortraitsItem');
 
 function GalleryButton(clickedElement){
 
@@ -33,3 +35,18 @@ function GalleryButton(clickedElement){
        return;
     }
 }
+
+function TabButtonOn(){
+    document.getElementById("Cross").style.display="block";
+    document.getElementById("Burger").style.display="none";
+
+    document.getElementById("BurgerMenu").style.right = "0px"
+}
+
+function TabButtonOff(){
+    document.getElementById("Burger").style.display="block";
+    document.getElementById("Cross").style.display="none";
+
+       document.getElementById("BurgerMenu").style.right = "-350px"
+}
+

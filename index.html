@@ -5,16 +5,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <title>Anne Roos Leeuwis</title>
 
 <body>
     <div id="navBar">
-        <img src="Images/Container_Images/image.gif" style="max-width: 16%;">
+        <img src="Images/Container_Images/image.gif"  class="customName">
         <div class="navBarItems">
             <button class="navBarButtons"><p1>Gallery</p1></button>
             <button class="navBarButtons" onclick="window.location.href='About.html';"><p1>About</p1></button>
+        </div>
+
+        <div class="navBarMobileItem">
+            <button onclick="TabButtonOn()" class="navBarButtonsStyle"><img id="Burger" src="Images/Lines.png"></button>
+            <button onclick="TabButtonOff()" class="navBarButtonsStyle"><img id="Cross" src="Images/Cross.png"></button>
         </div>
     </div>
     <div style="margin-left: auto; margin-right: auto; text-align: center; text-decoration: underline; text-underline-offset: 10px; text-decoration-thickness: 2px; margin-top: 150px;">
@@ -30,12 +37,31 @@
         <button id="Button_GameArt" class="galleryButtons" onclick="GalleryButton(this.id)">Game art</button>
     </div>
 
+    <div id="BurgerMenu">
+        <div class="BurgerMenuContainer">
+            <button class="BurgerMenuButton"><b>Gallery</b></button>
+            <button class="BurgerMenuButton"><b>About</b></button>
+        </div>
+      
+    </div>
+
     <div id="Portraits" class="imageContainer">
-        <img class="PortraitsItem" src="Images/Container_Images/IMG_0151.jpg" style="max-width: 50%;">
-        <img class="PortraitsItem" src="Images/Container_Images/me.jpg">
+        <article class="OverlayContainer" style="flex: 900px;">
+            <img class="PortraitsItem" src="Images/Container_Images/IMG_0151.jpg">
+            <div class="overlay"></div>
+        </article>
+        <article class="OverlayContainer">
+        <img class="PortraitsItem" src="Images/Container_Images/me.jpg" style="max-width: 106%;">
+        </article>
+        <article class="OverlayContainer">
         <img class="PortraitsItem" src="Images/Container_Images/Aragorn_Colored.jpg">
-        <img class="PortraitsItem" src="Images/Container_Images/Orthodoux_DTIYS.jpg">
-        <img class="PortraitsItem" src="Images/Container_Images/Goddess.png">
+        </article>
+        <article class="OverlayContainer">
+        <img class="PortraitsItem" src="Images/Container_Images/Orthodoux_DTIYS.jpg" style="max-width: 100%;">
+        </article>
+        <article class="OverlayContainer">
+        <img class="PortraitsItem" src="Images/Container_Images/Goddess.png" style="max-width: 95%;">
+        </article>
     </div>
 
     <div id="Landscapes" class="imageContainer">
@@ -58,8 +84,8 @@
     <div id="GameArt" class="imageContainer">
     </div>
 
-    <div style="margin-inline: auto; max-width: fit-content;">
-        <img src="Images/Socials/underline_About.gif">
+    <div class="customUnderline">
+        <img src="Images/Socials/underline_About.gif" class="underline">
     </div>
 
     <script src="Navbar.Js" defer></script>
