@@ -18,12 +18,19 @@
             <button class="navBarButtons" onclick="window.location.href='About.html';"><p1>About</p1></button>
         </div>
 
-          <div class="navBarMobileItem">
-                <button class="navBarButtonsStyle"><img id="Burger" src="Images/Lines.png"></button>
-          </div>
+        <div class="navBarMobileItem">
+            <button onclick="TabButtonOn()" class="navBarButtonsStyle"><img id="Burger" src="Images/Lines.png"></button>
+            <button onclick="TabButtonOff()" class="navBarButtonsStyle"><img id="Cross" src="Images/Cross.png"></button>
+        </div>
     </div>
 
-    <div id="BurgerMenu"></div>
+    <div id="BurgerMenu">
+        <div class="BurgerMenuContainer">
+            <button class="BurgerMenuButton"><b>Gallery</b></button>
+            <button class="BurgerMenuButton"><b>About</b></button>
+        </div>
+      
+    </div>
 
     <div class="AboutContainer">
         <img class="about_Profile_Image" src="Images/About_Profile.png">
@@ -48,5 +55,7 @@
         </div>
         <img src="Images/Socials/underline_About.gif" style="max-width: 30%;">
     </div>
+
+    <script src="GalleryButtons.js" defer></script>
 
 </body>
