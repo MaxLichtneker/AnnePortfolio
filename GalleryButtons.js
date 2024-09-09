@@ -12,6 +12,7 @@ function GalleryButton(clickedElement){
 
     if(previousImages != clickedButton){
 
+        previousImages.style.display = "none";
         previousImages.style.visibility = "hidden";
 
         for(i = 0; i < previousButtonString.length; i++)
@@ -19,6 +20,7 @@ function GalleryButton(clickedElement){
             previousButtonString[i].style.display = "none";
         }
 
+        CurrentImages.style.display = "flex";
         CurrentImages.style.visibility = "visible";
 
         let CurrentImagesArray = document.querySelectorAll("."+clickedButtonString.concat("Item"));
