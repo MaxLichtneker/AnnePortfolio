@@ -38,17 +38,22 @@ function GalleryButton(clickedElement){
     }
 }
 
+let state = false;
 function TabButtonOn(){
-    document.getElementById("Cross").style.display="block";
-    document.getElementById("Burger").style.display="none";
 
-    document.getElementById("BurgerMenu").style.right = "0px"
+    if(!state){
+        document.getElementById("Burger").src = buttonImgArray[1];
+
+        document.getElementById("BurgerMenu").style.right = "0px";
+
+        state = true
+    }else{
+        document.getElementById("Burger").src = buttonImgArray[0];
+
+        document.getElementById("BurgerMenu").style.right = "-355px";
+
+        state = false
+    }
 }
 
-function TabButtonOff(){
-    document.getElementById("Burger").style.display="block";
-    document.getElementById("Cross").style.display="none";
-
-       document.getElementById("BurgerMenu").style.right = "-350px"
-}
 

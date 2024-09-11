@@ -52,6 +52,14 @@ p2{
 
 @media (max-width: 1150px) {
 
+    #Burger{
+        width: 150%;
+    }
+
+    #Cross{
+        width: 150%;
+    }
+
     p2{
         font-size: 1.8rem;
     }
@@ -71,7 +79,39 @@ p2{
         
     }
 
+    .customName{
+        max-width: 50%;
+    }
+
     .about_Profile_Image{
         max-width: 100%;
     }
+
+    .navBarButtonsStyle{
+        border: none;
+        background: none;
+    }
+
+    .navBarMobileItem{
+        display: flex;
+        flex-direction: row;
+    
+        margin-left: auto;
+        
+        margin-right: 0px;
+    }
+
+    .navBarItems{
+        display: none;
+    }
+
+    #BurgerMenu{
+        display: block;
+    }
+    
+    #navBar{
+        position: fixed;
+        background-color: #ffffff;
+    }
 }
+

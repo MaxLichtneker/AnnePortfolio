@@ -177,10 +177,12 @@ body{
 
 #Cross{
     display: none;
+    width: 50%;
 }
 
 #Burger{
     display: block;
+    width: 50%;
 }
 
 #BurgerMenu{
@@ -256,6 +258,7 @@ p1{
 
 
 @media (max-width: 850px) {
+
     #BurgerMenu{
         display: block;
     }
