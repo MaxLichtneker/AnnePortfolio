@@ -24,7 +24,7 @@ function GalleryButton(clickedElement){
         CurrentImages.style.visibility = "visible";
 
         let CurrentImagesArray = document.querySelectorAll("."+clickedButtonString.concat("Item"));
-    
+
         for(i = 0; i < CurrentImagesArray.length; i++)
         {
             CurrentImagesArray[i].style.display = "block";

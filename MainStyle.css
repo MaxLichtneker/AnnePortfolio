@@ -165,8 +165,9 @@ body{
     max-width: 100%;
 }
 
-.gameArtItem{
+.GameArtItem{
     display: none;
+    max-width: 100%;
 }
 
 .customUnderline{
