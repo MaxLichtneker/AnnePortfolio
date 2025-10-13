@@ -4,11 +4,16 @@
     display: flex;
     
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-basis: auto;
-    gap: 50px;
 }
 
 .image-Item{
     max-width: 70%;
+}
+
+.image-item-grid{
+    max-width: 49%;
 }

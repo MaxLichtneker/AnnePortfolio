@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="GameArt.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<title>Switch</title>
+
+<body>
+    <div id="navBar">
+        <img src="Images/Container_Images/image.gif"  class="customName">
+        <div class="navBarItems">
+            <button class="navBarButtons"onclick="window.location.href='index.html';"><p1>Gallery</p1></button>
+            <button class="navBarButtons" onclick="window.location.href='About.html';"><p1>About</p1></button>
+        </div>
+
+        <div class="navBarMobileItem">
+            <button onclick="TabButtonOn()" class="navBarButtonsStyle"><img id="Burger" src="Images/Lines.png"></button>
+        </div>
+    </div>
+   
+    <div id="BurgerMenu">
+        <div class="BurgerMenuContainer">
+            <button class="BurgerMenuButton"><b>Gallery</b></button>
+            <button class="BurgerMenuButton" onclick="window.location.href='About.html';"><b>About</b></button>
+        </div>
+    </div>
+
+    <div class="Gameart-Grid">
+        <iframe width="1060" height="615" src="https://www.youtube.com/embed/tIxF3r5nwdg?si=LAeIWmZN2hyAUXGP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div style="max-width: 50%;">
+            <p>During my internship at Grey Games, I had the oppurtunity to make concepts for a multiplayer game name SWITCH. In this game the player could manipulate the arena whilst shooting their opponents and capture their flag.<br>
+            <p>I made a few concepts to grasp the feel of the game and also made a UI that communicated to the player about their health, abilities, flag location and more.</p>
+        </div>
+
+        <div style="display: flex; width: 90%; flex-direction: row; flex-wrap:wrap; gap: 10px; justify-content: center;">
+            <img class="image-item-grid" src="Images/Container_Images/Game_Art/Switch/Concept_1.webp">
+            <img class="image-item-grid" src="Images/Container_Images/Game_Art/Switch/Concept_2.webp">
+            <img class="image-item-grid" style="max-width: 80%;" src="Images/Container_Images/Game_Art/Switch/Leadboardd.png">
+            <img class="image-item-grid" src="Images/Container_Images/Game_Art/Switch/Red_Team_Emblem.webp">
+            <img class="image-item-grid" src="Images/Container_Images/Game_Art/Switch/Blue_Team_Emblem.webp">
+        </div>
+    </div>
+</body>
